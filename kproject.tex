@@ -1,0 +1,35 @@
+% Базовые настройки
+\documentclass[a4paper,12pt]{report}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} 
+\usepackage[dvips]{graphicx} 
+\graphicspath{{images/}}
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+\bibliographystyle{unsrt}
+
+% Поля страницы
+\usepackage{geometry} 
+\geometry{left=2cm}
+\geometry{right=1.5cm}
+\geometry{top=1cm}
+\geometry{bottom=2cm}
+
+% Меняем везде перечисления на цифра.цифра
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\renewcommand{\theenumii}{.\arabic{enumii}}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+\renewcommand{\theenumiii}{.\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}
+
+\begin{document}
+\input{kproject-title} % титульный лист
+\tableofcontents % это оглавление, которое генерируется автоматически
+\input{introduction}
+\input{goal}
+\bibliography{biblio/lit}
+\end{document}
