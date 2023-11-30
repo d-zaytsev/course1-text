@@ -22,6 +22,9 @@
 \geometry{top=1cm}
 \geometry{bottom=2cm}
 
+\setcounter{page}{1}  % Сбросить страницы
+\renewcommand{\thepage}{\the\numexpr\value{page}+2}
+
 \begin{document}
 \input{kproject-title} % титульный лист
 \tableofcontents % это оглавление, которое генерируется автоматически
