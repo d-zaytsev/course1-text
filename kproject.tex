@@ -4,7 +4,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
 \usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} 
-\usepackage[dvips]{graphicx} 
+\usepackage{graphicx}	% for pictures 
+\usepackage{subcaption}	% for pictures
+\usepackage[russian]{babel}
+\captionsetup{justification=centering, labelfont=bf}
 \usepackage{titlesec}
 \usepackage{lipsum}
 \graphicspath{{images/}}
@@ -25,6 +28,8 @@
 % Страницы с номера 2
 \setcounter{page}{1}  % Сбросить страницы
 \renewcommand{\thepage}{\the\numexpr\value{page}+2}
+\renewcommand{\thefigure}{\arabic{figure}}
+\setcounter{figure}{1}
 
 \begin{document}
 \input{kproject-title} % титульный лист
