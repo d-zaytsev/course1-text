@@ -5,7 +5,7 @@
 \input{preamble.tex}
 
 % То, что в квадратных скобках, отображается внизу по центру каждого слайда. 
-\title[Короткое название]{Разработка мобильного приложения для развития музыкальных навыков}
+\title[Разработка приложения]{Разработка мобильного приложения для развития музыкальных навыков}
 
 % То, что в квадратных скобках, отображается в левом нижнем углу. 
 \institute[СПбГУ]{}
@@ -49,7 +49,7 @@
   \begin{itemize}
     \item Интерес к музыке никогда не падает, сейчас это одно из самых популярных хобби
     \item Изучение музыки -- трудоёмкий процесс, требующий наличия рядом опытного преподавателя
-    \item Существует мало современных, эффективных решений для развитиях этих навыков
+    \item Существует мало современных, эффективных решений для развития этих навыков
   \end{itemize}
 \end{frame}
            
@@ -66,7 +66,7 @@
     \item Разработка архитектуры
     \item Создание приложения с первым обучающим режимом
   \end{enumerate}
-\end{frame}           
+\end{frame}                      
             
 \begin{frame}  
   \frametitle{Существующие решения}
@@ -79,35 +79,13 @@
     \item Выводы
     \begin{itemize}
       \item Существует реальная потребность в приложениях, помогающих в освоении музыкальных навыков
-      \item Ни одно из решений полностью не решает проблемы, для учащихся российских муз. школ ситуация ещё хуже
-      \item При разработке приложений было принято также и множество хороших решений
+      \item Ни одно из решений полностью не решает проблемы, для учащихся российских музыкальных школ ситуация ещё хуже
+      \item При разработке приложений было принято также и множество хороших решений (гибкая настройка упражнений, наличие теоретического материала рядом с заданиями)
     \end{itemize}
   \end{itemize}  
     
 \end{frame}
             
-%Идеально, если есть по одному слайду на каждую поставленную задачу            
-
-\begin{frame}
-  \frametitle{Архитектура приложения}
-  \includegraphics[width=\textwidth]{../images/UML.pdf}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Пользовательский интерфейс}
-  \begin{tabular}{p{5cm} p{7cm}}
-  Внешний вид упражнения & Piano Checkbox \\
-  \includegraphics[width=0.3\textwidth]{../images/example3-eps-converted-to.pdf}&
-  \vspace{-200pt}
-  \includegraphics[width=0.3\textwidth]{../images/example1-eps-converted-to.pdf}\\
-  &
-  \vspace{-140pt}
-  Piano Keyboard\\&
-  \vspace{-135pt}
-  \includegraphics[width=0.3\textwidth]{../images/example4-eps-converted-to.pdf}
- \end{tabular}
-\end{frame}
-
 \begin{frame}  
   \frametitle{Используемые технологии}
   \begin{itemize}
@@ -118,6 +96,29 @@
     \item JUnit 5
     \item Jetpack Compose
   \end{itemize}   
+\end{frame}             
+            
+%Идеально, если есть по одному слайду на каждую поставленную задачу            
+
+\begin{frame}
+  \frametitle{Архитектура приложения}
+  \includegraphics[width=\textwidth]{../images/UML.pdf}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Пользовательский интерфейс}
+  \begin{tabular}{p{6cm} p{7cm}}
+  Внешний вид упражнения & \hspace{13pt}Piano Checkbox \\
+  \hspace{10pt}
+  \includegraphics[width=0.3\textwidth]{../images/example3-eps-converted-to.pdf}&
+  \vspace{-200pt}
+  \includegraphics[width=0.3\textwidth]{../images/example1-eps-converted-to.pdf}\\
+  &
+  \vspace{-105pt}
+  \hspace{15pt}Piano Keyboard\\&
+  \vspace{-105pt}
+  \includegraphics[width=0.3\textwidth]{../images/example4-eps-converted-to.pdf}
+ \end{tabular}
 \end{frame}
 
 \begin{frame}
@@ -125,16 +126,11 @@
   Были решены следующие задачи:
   \begin{itemize}
     \item Выполнен обзор существующих решений
-    \item Собраны требования для приложения
-    \item Изученны необходимые для его реализации технологии
     \item Разработана архитектура приложения
-    \item Созданы некоторые элементы пользовательского интерфейса
     \item Реализован первый обучающий режим
   \end{itemize}
-
-  \begin{itemize}
-    \item Весь код есть в репозитории проекта (+ CI со сборкой APK)
-  \end{itemize}
+\vspace{30pt}
+Весь код есть в репозитории проекта (+ CI со сборкой APK): \url{https://github.com/d-zaytsev/android-app}
 \end{frame}
 
 \end{document}
